@@ -11,70 +11,17 @@ DefaultContentLanguageInSubdir = true  # Varsayılan dil alt klasörde yer alır
 
 # Çok dilli yapılandırma
 [languages]
-  [languages.en]
-    contentDir = "content/en"  # İngilizce içerik klasörü
-    weight = 3
-    languageName = "English"  # Dil adı
-    [languages.en.params]
-        description = "@k0d1r"  # English site description
-        introTitle = "Hello, I'm k0d1r"
-        introSubtitle = "I'm a 23-year-old backend developer who enjoys gaming, blogging, and working out"
-        introPhoto = "/picture.jpg"  # Profile photo
-
-    [[languages.en.menu.main]]
-        name = "Blog"  # Menüde "Blog" sayfası
-        url = "blog"
-        weight = 1
-
-    [[languages.en.menu.main]]
-        name = "About"  # "Hakkımda" sayfası
-        url = "page/about/"
-        weight = 2
-
-    [[languages.en.menu.main]]
-        name = "Tags"  # "Etiketler" sayfası
-        url = "tags"
-        weight = 3
-
-  [languages.de]
-    contentDir = "content/de"  # Almanca içerik klasörü
-    weight = 2
-    languageName = "Deutsch"  # Dil adı
-    title = "@k0d1r"  # Almanca başlık
-     [languages.de.params]
-        description = "@k0d1r"  # Deutsche Website-Beschreibung
-        introTitle = "Hallo, ich bin k0d1r"
-        introSubtitle = "Ich bin ein 23-jähriger Backend-Entwickler, der gerne Spiele spielt, bloggt und Sport treibt"
-        introPhoto = "/picture.jpg"  # Profilfoto
-
-    [[languages.de.menu.main]]
-        name = "Blog"  # Almanca "Blog" sayfası
-        url = "blog"
-        weight = 1
-
-    [[languages.de.menu.main]]
-        name = "Über mich"  # Almanca "Hakkımda" sayfası
-        url = "page/about/"
-        weight = 2
-
-    [[languages.de.menu.main]]
-        name = "Tags"  # Almanca "Etiketler" sayfası
-        url = "tags"
-        weight = 3
-
-  # Türkçe dil ayarları
   [languages.tr]
     contentDir = "content/tr"  # Türkçe içerik klasörü
     weight = 1
     languageName = "Türkçe"  # Dil adı
-    title = "@k0d1r"  # Türkçe başlık
+    title = "ҜŦΔ"  # Türkçe başlık
 
     [languages.tr.params]
         description = "@k0d1r"  # Türkçe site açıklaması
         introTitle = "Merhaba, ben k0d1r"
         introSubtitle = "23 yaşında bir backend geliştiricisiyim, oyunları, blog yazmayı ve spor yapmayı seviyorum"
-        introPhoto = "/picture.jpg"  # Profil fotoğrafı
-
+        introPhoto = "/me.png"  # Profil fotoğrafı
 
     [[languages.tr.menu.main]]
         name = "Blog"  # Türkçe "Blog" sayfası
@@ -91,42 +38,17 @@ DefaultContentLanguageInSubdir = true  # Varsayılan dil alt klasörde yer alır
         url = "tags"
         weight = 3
 
-  [languages.fr]
-    contentDir = "content/fr"  # Fransızca içerik klasörü
-    weight = 4
-    languageName = "Français"  # Dil adı
-     [languages.fr.params]
-         description = "@k0d1r"  # Description du site en français
-         introTitle = "Bonjour, je suis k0d1r"
-         introSubtitle = "Je suis un développeur backend de 23 ans qui aime les jeux, les blogs et faire du sport"
-         introPhoto = "/picture.jpg"  # Photo de profil
-
-    [[languages.fr.menu.main]]
-        name = "Blog"  # Fransızca "Blog" sayfası
-        url = "blog"
-        weight = 1
-
-    [[languages.fr.menu.main]]
-        name = "À propos"  # Fransızca "Hakkımda" sayfası
-        url = "page/about/"
-        weight = 2
-
-    [[languages.fr.menu.main]]
-        name = "Tags"  # Fransızca "Etiketler" sayfası
-        url = "tags"
-        weight = 3
-
 [params]
-  # Enable the darkmode toggle in header
+  # Başlıkta karanlık mod geçişini etkinleştir
   darkModeToggle = true
   
-  # Enable search in header
+  # Başlıkta arama özelliğini etkinleştir
   enableSearch = true
 
-  # Option to customize the search parameters of a page
-  # Below are the supported options; Note that including entire content
-  # may slowdown the loading of search results
-  # Title of page is included by default
+  # Sayfa arama parametrelerini özelleştirme seçeneği
+  # Aşağıda desteklenen seçenekler bulunmaktadır; Tüm içeriği dahil etmek
+  # arama sonuçlarının yüklenmesini yavaşlatabilir
+  # Sayfa başlığı varsayılan olarak dahil edilir
   searchKeys = [
     "tags",
     "date",
@@ -137,42 +59,42 @@ DefaultContentLanguageInSubdir = true  # Varsayılan dil alt klasörde yer alır
     "author"
   ]
 
-  # Custom copyright - optional
-  copyright = "Copyright © 2024 - @k0d1r · All rights reserved"
+  # Özel telif hakkı - isteğe bağlı
+  copyright = "Copyright © 2024 - @k0d1r · Tüm hakları saklıdır"
   favicon = "/favicon.svg"
 
-  # Color for the intro details and social links block, not applicable for dark mode
-  # Supported values: Any color from TailwindCSS default colors
-  # Reference: https://tailwindcss.com/docs/customizing-colors
+  # Tanıtım detayları ve sosyal bağlantılar bloğu için renk, karanlık mod için geçerli değil
+  # Desteklenen değerler: TailwindCSS varsayılan renklerinden herhangi biri
+  # Referans: https://tailwindcss.com/docs/customizing-colors
   ascentColor = "bg-blue-100"
 
-  # The page bundle that is shown on the front page
+  # Ana sayfada gösterilen sayfa paketi
   frontBundle = "blog"
 
-  # Used to hide the post metadata such as posted date, reading time and word count
-  # Can be used at site level or page level
+  # Gönderi meta verilerini (yayımlanma tarihi, okuma süresi ve kelime sayısı gibi) gizlemek için
+  # Site düzeyinde veya sayfa düzeyinde kullanılabilir
   hideMeta = false
 
-  # To hide "Other languages" option if the post is available in multiple languages
-  # Can be used at site level or page level
+  # Gönderi birden fazla dilde mevcutsa "Diğer diller" seçeneğini gizle
+  # Site düzeyinde veya sayfa düzeyinde kullanılabilir
   hideOtherLanguages = false
 
-  # Add support for Table of contents
-  # Can be added to a page level also in markdown frontmatter
+  # İçindekiler tablosunu destekle
+  # Markdown ön bilgilerinde de bir sayfaya eklenebilir
   toc = true
 
-  # Hides the thumbnail in post view
-  # Thumbnails in home and blog pages will still be shown
-  # This setting can also be in page's markdown file
+  # Gönderi görünümünde küçük resmi gizler
+  # Ana sayfa ve blog sayfalarında küçük resimler hala gösterilecektir
+  # Bu ayar ayrıca sayfanın markdown dosyasında da olabilir
   hidePageThumbnail = false
 
-# Comments system
+# Yorum sistemi
 [params.comments]
-  # Supports disqus, giscus and utterances
-  # Check hugo docs for setting up disqus
+  # disqus, giscus ve utterances'ı destekler
+  # disqus ayarları için hugo belgelerine bakın
   system = "giscus"
 
-  # Options for giscus, exclude hyphens
+  # Giscus seçenekleri, kısa çizgileri hariç tutun
   repo = ""
   repoid = ""
   category = ""
@@ -184,7 +106,7 @@ DefaultContentLanguageInSubdir = true  # Varsayılan dil alt klasörde yer alır
   inputposition = ""
   theme = ""
 
-  # Options for utterances, exclude hyphens
+  # Utterances seçenekleri, kısa çizgileri hariç tutun
   # repo = ""
   # issueterm = ""
   # theme = ""
@@ -250,7 +172,7 @@ DefaultContentLanguageInSubdir = true  # Varsayılan dil alt klasörde yer alır
     url = "https://behance.net"
 
 [[menu.main]]
-  name = "About"
+  name = "Hakkında"
   url = "/about"
 
 [build]
@@ -259,10 +181,10 @@ DefaultContentLanguageInSubdir = true  # Varsayılan dil alt klasörde yer alır
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
-# syntax highlight settings
+# Sözdizimi vurgulama ayarları
 [markup]
   [markup.highlight]
     style = "dracula"
   [markup.goldmark.renderer]
-    # Enable to include inline HTML
+    # Inline HTML'yi dahil etmeyi etkinleştir
     unsafe = true
