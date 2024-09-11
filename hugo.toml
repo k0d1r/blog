@@ -21,7 +21,7 @@ DefaultContentLanguageInSubdir = true  # Varsayılan dil alt klasörde yer alır
         description = "@k0d1r"  # Türkçe site açıklaması
         introTitle = "Merhaba, ben k0d1r"
         introSubtitle = "23 yaşında bir backend geliştiricisiyim, oyunları, blog yazmayı ve spor yapmayı seviyorum"
-        introPhoto = "/me.png"  # Profil fotoğrafı
+        introPhoto = "/me.jpg"  # Profil fotoğrafı
 
     [[languages.tr.menu.main]]
         name = "Blog"  # Türkçe "Blog" sayfası
